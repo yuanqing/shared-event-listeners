@@ -1,7 +1,7 @@
 {
   "name": "shared-event-listeners",
   "version": "0.0.0",
-  "description": "Utility for minimising the number of event listeners bound on the DOM.",
+  "description": "A utility for minimising the number of event listeners bound on a given DOM element.",
   "author": "Lim Yuan Qing",
   "license": "MIT",
   "main": "lib/index.js",
@@ -40,6 +40,8 @@
     "watchify": "3.7.0"
   },
   "scripts": {
+    "example": "gulp example",
+    "lint": "gulp lint",
     "prepublish": "gulp build",
     "test": "gulp test"
   },
