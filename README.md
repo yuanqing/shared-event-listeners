@@ -51,14 +51,14 @@ import sharedEventListeners from 'shared-event-listeners';
 
 ### eventListeners.add(eventName, listener)
 
-Analogous to calling `addEventListener`. Returns a function for removing the listener.
+*Analogous to calling `addEventListener`.* Returns a function for removing the listener.
 
 - `eventName` &mdash; A string.
 - `listener` &mdash; A function that is called when an event of the specified `eventName` occurs.
 
 ### eventListeners.remove(eventName, listener)
 
-Analogous to calling `removeEventListener`.
+*Analogous to calling `removeEventListener`.*
 
 - `eventName` &mdash; A string.
 - `listener` &mdash; The function to be removed.
