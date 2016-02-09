@@ -45,7 +45,7 @@ $ gulp example --open
 import sharedEventListeners from 'shared-event-listeners';
 ```
 
-### var eventListeners = sharedEventListeners([element])
+### const eventListeners = sharedEventListeners([element])
 
 - `element` &mdash; A DOM element. Defaults to `window`.
 
