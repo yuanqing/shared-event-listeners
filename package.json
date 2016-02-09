@@ -9,6 +9,10 @@
     "type": "git",
     "url": "git://github.com/yuanqing/shared-event-listeners.git"
   },
+  "files": [
+    "lib",
+    "src"
+  ],
   "devDependencies": {
     "babel-core": "6.5.1",
     "babel-eslint": "4.1.8",
