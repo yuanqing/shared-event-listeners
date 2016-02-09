@@ -5,24 +5,25 @@
 ## Usage
 
 ```js
-import sharedEventListeners from 'shared-event-listeners';
+import sharedEventListeners from '../';
 
-const windowEventListeners = sharedEventListeners(window);
+const button = document.querySelector('.button');
+const eventListeners = sharedEventListeners(button);
 
 function foo() {
   console.log('foo');
 }
-const removeFooListener = windowEventListeners.add('scroll', foo);
+const removeFooListener = eventListeners.add('click', foo);
 
 function bar() {
   console.log('bar');
 }
-const removeBarListener = windowEventListeners.add('scroll', bar);
+const removeBarListener = eventListeners.add('click', bar);
 ```
 
-Both the `foo` and `bar` listeners are called on scroll. However, only **one** event listener is actually bound on the `window` element. (Internally, said event listener calls both `foo` and `bar` in turn on every `scroll` event.)
+Both the `foo` and `bar` listeners are called when we click on the `.button`. However, only **one** event listener is actually bound on the `.button`. (Internally, said event listener calls `foo` and `bar` in turn on the `click` event.)
 
-Each call to `add` returns a function for removing the particular listener. The one event listener that was bound on `window` will be removed after we call **both** `removeFooListener` and `removeBarListener`.
+Each call to `add` returns a function for removing the particular listener. In our example, the one event listener that was bound will be removed after we call **both** `removeFooListener` and `removeBarListener`.
 
 ```js
 removeFooListener();

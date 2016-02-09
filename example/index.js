@@ -1,11 +1,17 @@
 import sharedEventListeners from '../';
 
-var eventListeners = sharedEventListeners(document.querySelector('.trigger'));
-var removeFirstListener = eventListeners.add('click', function() {
-  console.log('first');
-});
-var removeSecondListener = eventListeners.add('click', function() {
-  console.log('second');
-});
-document.querySelector('.remove-first-listener').addEventListener('click', removeFirstListener);
-document.querySelector('.remove-second-listener').addEventListener('click', removeSecondListener);
+const button = document.querySelector('.button');
+const eventListeners = sharedEventListeners(button);
+
+function foo() {
+  console.log('foo');
+}
+const removeFooListener = eventListeners.add('click', foo);
+
+function bar() {
+  console.log('bar');
+}
+const removeBarListener = eventListeners.add('click', bar);
+
+document.querySelector('.remove-foo-listener').addEventListener('click', removeFooListener);
+document.querySelector('.remove-bar-listener').addEventListener('click', removeBarListener);
