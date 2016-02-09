@@ -1,6 +1,6 @@
 {
   "name": "shared-event-listeners",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A utility for minimising the number of event listeners bound on a given DOM element.",
   "author": "Lim Yuan Qing",
   "license": "MIT",
