@@ -1,4 +1,4 @@
-# shared-event-listeners [![npm Version](http://img.shields.io/npm/v/shared-event-listeners.svg?style=flat)](https://www.npmjs.com/package/shared-event-listeners) [![Build Status](https://img.shields.io/travis/yuanqing/shared-event-listeners.svg?branch=master&style=flat)](https://travis-ci.org/yuanqing/shared-event-listeners)
+# shared-event-listeners [![npm Version](http://img.shields.io/npm/v/shared-event-listeners.svg?style=flat)](https://www.npmjs.com/package/shared-event-listeners) [![Build Status](https://img.shields.io/travis/yuanqing/shared-event-listeners.svg?branch=master&style=flat)](https://travis-ci.org/yuanqing/shared-event-listeners) [![Coverage Status](https://img.shields.io/coveralls/yuanqing/shared-event-listeners.svg?style=flat)](https://coveralls.io/r/yuanqing/shared-event-listeners)
 
 > A utility for minimising the number of event listeners bound on a given DOM element.
 
