@@ -2,10 +2,10 @@
 
 > A utility for minimising the number of event listeners bound on a given DOM element.
 
-## Usage
+## Example
 
 ```js
-import sharedEventListeners from '../';
+import sharedEventListeners from 'shared-event-listeners';
 
 const button = document.querySelector('.button');
 const eventListeners = sharedEventListeners(button);
@@ -30,7 +30,7 @@ removeFooListener();
 removeBarListener();
 ```
 
-## Example
+Run the [example](example/):
 
 ```
 $ git clone https://github.com/yuanqing/shared-event-listeners
