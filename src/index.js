@@ -42,16 +42,10 @@ export default (element = window) => {
     return remove.bind(null, eventName, listener);
   }
 
-  // Trigger all listeners associated with the `eventName`.
-  function trigger(eventName) {
-    mapEventNameToSharedListener[eventName]();
-  }
-
   // Expose public API.
   return {
     add,
-    remove,
-    trigger
+    remove
   };
 
 };

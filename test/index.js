@@ -114,21 +114,3 @@ test('throws if a listener to be removed does not exist', (t) => {
 
   removeNode(node);
 });
-
-test('throws if a listener to be removed does not exist', (t) => {
-  t.plan(1);
-  const node = createNode();
-  const eventListeners = sharedEventListeners(node);
-
-  const array = [];
-  eventListeners.add('click', () => {
-    array.push(1);
-  });
-  eventListeners.add('click', () => {
-    array.push(2);
-  });
-  eventListeners.trigger('click');
-  t.looseEqual(array, [1, 2]);
-
-  removeNode(node);
-});
