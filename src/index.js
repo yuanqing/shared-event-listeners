@@ -25,9 +25,9 @@ export default (element = window) => {
     }
     listeners.splice(listenerIndex, 1);
     if (listeners.length === 0) {
+      element.removeEventListener(eventName, mapEventNameToSharedListener[eventName]);
       delete mapEventNameToListeners[eventName];
       delete mapEventNameToSharedListener[eventName];
-      element.removeEventListener(eventName, mapEventNameToSharedListener[eventName]);
     }
   }
 
